@@ -6,7 +6,6 @@ var confirmLowercase;
 
 character = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "\:", "\;", " < ", "=", " > ", " ? ", "@", "[", "\\", "]", " ^ ", "_", "`", "{", "|", "}", "~"];
 number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
 alpha = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 space = [];
 
@@ -24,7 +23,7 @@ get.addEventListener("click", function () {
 });
 
 function generatePassword() {
-    enter = parseInt(prompt("How many characters would you like your password? Choose between 8 and 128"));
+    enter = parseInt(prompt("How many characters would you like in your password? Choose between 8 and 128"));
     if (!enter) {
         alert("This needs a value");
     } else if (enter < 8 || enter > 128) {
@@ -37,7 +36,7 @@ function generatePassword() {
     };
 
     if (!confirmCharacter && !confirmNumber && !confirmUppercase && !confirmLowercase) {
-        choices = alert("You must choose a criteria!");
+        choices = alert("You must choose a criteria");
 
     }
     else if (confirmCharacter && confirmNumber && confirmUppercase && confirmLowercase) {
