@@ -1,4 +1,3 @@
-
 var enter;
 var confirmNumber;
 var confirmCharacter;
